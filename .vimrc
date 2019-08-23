@@ -14,6 +14,7 @@ Plugin 'git://github.com/lifepillar/vim-solarized8.git'
 Plugin 'git://github.com/vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'powerline/powerline-fonts'
+Plugin 'ervandew/supertab'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -50,6 +51,13 @@ set scrolloff=4                 " keep 4 lines off the edges of the screen when 
 set showmatch                   " set show matching parenthesis
 set hlsearch                    " highlight search terms
 set incsearch                   " show search matches as you type
+set relativenumber              " show line numbers relative to current line
+
+"Explicitly setting filetypes----------{{{
+autocmd BufRead,BufNewFile *.vgt set filetype=vgt
+autocmd BufRead,BufNewFile *.upf,*.upf2 set filetype=upf
+autocmd BufRead,BufNewFile *.lib set filetype=liberty
+"}}}
 
 "Vimscript file settings-----------{{{
 augroup filetype_vim
@@ -96,7 +104,7 @@ augroup END
 "Appearance----------{{{
 set guifont=Droid\ Sans\ Mono\ Slashed\ for\ Pow:h10
 colorscheme solarized8_dark_high
-let g:airline_theme='badwolf'
+let g:airline_theme='badcat'
 "}}}
 
 "Key remapping----------{{{
