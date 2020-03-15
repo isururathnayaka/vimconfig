@@ -130,6 +130,10 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>n :bnext<cr>
 nnoremap <leader>p :bprevious<cr>
 
+"text wrap
+nnoremap <leader>w :set wrap<cr>
+nnoremap <leader>u :set nowrap<cr>
+
 "}}}
 
 "Air-line config----------{{{
