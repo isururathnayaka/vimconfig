@@ -109,7 +109,7 @@ let g:airline_theme='badcat'
 
 "Key remapping----------{{{
 "remapping
-nnorem : ;
+nnoremap : ;
 nnoremap ; :
 
 inoremap jj <Esc>
