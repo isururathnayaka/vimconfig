@@ -59,6 +59,16 @@ autocmd BufRead,BufNewFile *.upf,*.upf2 set filetype=upf
 autocmd BufRead,BufNewFile *.lib set filetype=liberty
 "}}}
 
+"Python settings-----------{{{
+augroup filetype_py
+    autocmd!
+    "code folding
+    autocmd FileType python setlocal foldmethod=marker
+    "comments
+    autocmd FileType python nnoremap <buffer> <leader>c I#<Esc>
+augroup END
+"}}}
+
 "Vimscript file settings-----------{{{
 augroup filetype_vim
     autocmd!
